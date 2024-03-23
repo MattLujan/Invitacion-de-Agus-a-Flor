@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid tomato; */
+}
+
+
+/* Puntos de interrupción para dispositivos de tamaño pequeño (como smartphones) */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+        /* Reducir el tamaño de la fuente del encabezado en dispositivos pequeños */
+    }
+
+    .fotos {
+        flex-direction: column;
+        /* Cambiar la dirección del flexbox a columna en dispositivos pequeños */
+    }
+
+    #agus_durmiendo,
+    #el_guerrero_dragon {
+        width: 100%;
+        /* Hacer que las imágenes ocupen el ancho completo en dispositivos pequeños */
+    }
+}
+
+/* Puntos de interrupción para dispositivos de tamaño mediano (como tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+        /* Ajustar el tamaño de la fuente del encabezado en tablets */
+    }
+
+    .fotos {
+        flex-wrap: wrap;
+        /* Permitir que los elementos del flexbox se envuelvan en tablets */
+    }
+
+    #agus_durmiendo,
+    #el_guerrero_dragon {
+        width: 45%;
+        /* Ajustar el ancho de las imágenes en tablets */
+    }
+}
+
+/* Puntos de interrupción para dispositivos de tamaño grande (pantallas de escritorio) */
+@media only screen and (min-width: 1025px) {
+    header h1 {
+        font-size: 3rem;
+        /* Ajustar el tamaño de la fuente del encabezado en pantallas de escritorio */
+    }
+}
+
+/*--------- HEADER --------------*/
+
+header h1{
+    text-align: center;
+}
+
+
+.pagina_1 {
+    background-image: url(../images/imagen_de_fondo.jpg);
+}
+
+/* ------------- MAIN -----------*/
+
+.fotos {
+    display:flex; 
+    border: 2px solid green;
+    background-image: url(../images/imagen_de_fondo.jpg);
+    width: 100%;
+    gap: 10px;
+    /* flex-flow: column wrap; */
+    text-align: center;
+}
+
+#agus_durmiendo{
+    width: 50%;
+}
+
+#el_guerrero_dragon{
+    margin-top: 2rem;
+    height: 600px;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- FOOTER -----------*/
+
+footer {
+    text-align: center;
+    background-image: url(../images/imagen_de_fondo.jpg);
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 100%;
+}
+
+/* ----------PAGINA 2 --------------- */
+
+.invitacion_bautismo {
+    background-image: url(../images/fondo_invitacion.jpg);
+    width: 100vh;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid whitesmoke;
+}
+
+.invitacion_bautismo h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+.banner_bautismo {
+    background-image: url(../images/banner_bautismo.jpg);
+}
+
+.invitacion_bautismo p {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+
