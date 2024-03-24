@@ -61,13 +61,14 @@ header h1{
 
 .pagina_1 {
     background-image: url(../images/imagen_de_fondo.jpg);
+    padding: 5px;
 }
 
 /* ------------- MAIN -----------*/
 
 .fotos {
     display:flex; 
-    border: 2px solid green;
+    border: 2px solid olivedrab;
     background-image: url(../images/imagen_de_fondo.jpg);
     width: 100%;
     gap: 10px;
